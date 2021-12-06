@@ -61,10 +61,8 @@ img {
 // card
 .cards {
   padding: 2em 0;
-  // background-color: hsl(208, 37%, 81%);
   background-color: hsl(263, 100%, 38%);
   .cards__grid {
-    border:2px solid red;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr;
     grid-template-areas:
@@ -79,35 +77,40 @@ img {
   padding: 1em 0;
   .card__header-leftside {
     margin-right: 1em;
-    font-size: 2.5rem;
-    font-size: clamp(1.5rem, calc(1.2vw+1rem), 2.5rem);
     .card__image {
-      width: 100%;
+      width: 70%;
       border-radius: 100%;
-      border: 5px solid rgb(167, 154, 154);
+      border: 2px solid rgb(167, 154, 154);
     }
   }
   .card__header-rightside {
     .card__header-title {
-      font-size: 2rem;
-      font-size: clamp(1.5rem, calc(1.2vw+1rem), 2rem);
+      color:hsl(0, 0%, 81%);
+      font-size: .85rem;
+      font-size: clamp(.85rem, calc(1.2vw+1rem), 1.5rem);
     }
     .card__header-subtitle {
-      font-size: 1rem;
-      font-size: clamp(1.3rem, calc(1.2vw+1rem), 2rem);
+      color:hsl(0, 0%, 81%);
+      font-size: .55rem;
+      font-size: clamp(.55rem, calc(1.2vw+.85rem), 1rem);
       opacity: 50%;
     }
   }
   .card__title {
-    font-size: 2rem;
-    font-size: clamp(1.5rem, calc(1.2vw+1rem), 2rem);
+    font-family: var(--ff-primary);
+    font-size: 1.4rem;
+    font-size: clamp(1.4rem, calc(1.2vw+1.5rem), 1.8rem);
     font-weight: var(--fw-bold);
+    margin-top:1rem;
+    line-height: 1.2;
+    color:hsl(0, 0%, 81%)
   }
   .card__paragraph {
-    font-size: 2rem;
-    font-size: clamp(1.3rem, calc(1.2vw+1rem), 2rem);
+    font-size: .45rem;
+    font-size: clamp(.45rem, 1rem, 1.2rem);
     font-weight: var(--fw-reg);
     opacity: 70%;
+    color:hsl(0, 0%, 81%);
   }
 }
 
@@ -125,13 +128,14 @@ img {
   grid-area: card--two;
 }
 .card--three {
+  color:red;
   background-color: var(--clr-White);
-  color: rebeccapurple;
   grid-area: card--three;
+  
 }
+
 .card--four {
   background-color: var(--clr-White);
-  color: var(--clr-Very-dark-blackis-blue);
   grid-area: card--four;
 }
 .card--five {
