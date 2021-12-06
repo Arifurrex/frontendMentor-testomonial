@@ -1,8 +1,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -50,18 +49,13 @@ img {
 }
 
 .grid {
-  display: -ms-grid;
   display: grid;
   grid-gap: 1em;
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .container {
@@ -71,19 +65,14 @@ img {
 
 .cards {
   padding: 2em 0;
-  background-color: #bccfe0;
+  background-color: #4a00c2;
 }
 
 .cards .cards__grid {
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 0.5fr 1fr 0.5fr 1fr;
-      grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr;
-      grid-template-areas: 'card--one'
- 'card--two'
- 'card--three'
- 'card--four'
- 'card--five';
+  border: 2px solid red;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr;
+  grid-template-areas: 'card--one' 'card--two' 'card--three' 'card--four' 'card--five';
 }
 
 .card {
@@ -128,8 +117,6 @@ img {
 
 .card--one {
   background-color: var(--clr-Moderate-violet);
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: card--one;
   background-image: url(/images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
@@ -139,43 +126,32 @@ img {
 
 .card--two {
   background-color: var(--clr-Very-dark-grayish-blue);
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: card--two;
 }
 
 .card--three {
   background-color: var(--clr-White);
   color: rebeccapurple;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: card--three;
 }
 
 .card--four {
   background-color: var(--clr-White);
   color: var(--clr-Very-dark-blackis-blue);
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
   grid-area: card--four;
 }
 
 .card--five {
   background-color: var(--clr-Very-dark-blackis-blue);
   color: var(--clr-White);
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
   grid-area: card--five;
 }
 
 @media (min-width: 800px) {
   .cards .cards__grid {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 'card--one card--one  card--two card--three '
- 'card--four card--five  card--five card--three ';
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 'card--one card--one  card--two card--three ' 'card--four card--five  card--five card--three ';
   }
 }
 /*# sourceMappingURL=main.css.map */
