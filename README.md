@@ -10,17 +10,6 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 ## How this template ive create 🔔 
- .cards__grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr;
-    grid-template-areas:
-      'card--one'
-      'card--two'
-      'card--three'
-      'card--four'
-      'card--five';
-  }
-  
   
   ```
 .cards__grid {
@@ -33,6 +22,37 @@ Thanks for checking out this front-end coding challenge.
       'card--four'
       'card--five';
   }
+```
+
+  ```
+.card--one {
+  grid-area: card--one;
+}
+.card--two {
+  grid-area: card--two;
+}
+.card--three {
+  grid-area: card--three;
+  
+}
+
+.card--four {
+  grid-area: card--four;
+}
+.card--five {
+  grid-area: card--five;
+}
+@media (min-width: 800px) {
+  .cards {
+    .cards__grid {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        'card--one card--one  card--two card--three '
+        'card--four card--five  card--five card--three ';
+    }
+  }
+}
 ```
 Thanks for checking out this front-end coding challenge.
 ## The challenge
