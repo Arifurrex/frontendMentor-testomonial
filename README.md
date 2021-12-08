@@ -9,7 +9,7 @@ Thanks for checking out this front-end coding challenge.
 [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
-## how this template ive cheate 👋
+## How this template ive create 🔔 
 
 Thanks for checking out this front-end coding challenge.
 ## The challenge
