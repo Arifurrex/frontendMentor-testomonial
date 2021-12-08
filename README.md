@@ -20,6 +20,13 @@ Thanks for checking out this front-end coding challenge.
       'card--four'
       'card--five';
   }
+  
+  
+  ```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
 Thanks for checking out this front-end coding challenge.
 ## The challenge
 
