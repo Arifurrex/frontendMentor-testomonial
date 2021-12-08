@@ -23,9 +23,16 @@ Thanks for checking out this front-end coding challenge.
   
   
   ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+.cards__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr;
+    grid-template-areas:
+      'card--one'
+      'card--two'
+      'card--three'
+      'card--four'
+      'card--five';
+  }
 ```
 Thanks for checking out this front-end coding challenge.
 ## The challenge
