@@ -9,7 +9,9 @@ Thanks for checking out this front-end coding challenge.
 [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
+## how this template ive cheate 👋
 
+Thanks for checking out this front-end coding challenge.
 ## The challenge
 
 Your challenge is to build out this testimonials grid section and get it looking as close to the design as possible.
